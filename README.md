@@ -1,0 +1,16 @@
+This a collection of resources for writing tests, mostly geared towards Python.
+
+# Tutorials
+
++ TDD Terminology Simplified [nettuts+]<br />
+http://net.tutsplus.com/articles/tdd-terminology-simplified/
+
++ Headless Functional Testing with Selenium and PhantomJS [nettuts+]<br />
+http://net.tutsplus.com/tutorials/javascript-ajax/headless-functional-testing-with-selenium-and-phantomjs/
+
++ Beginning Test-Driven Development in Python [nettuts+]<br />
+http://net.tutsplus.com/tutorials/python-tutorials/test-driven-development-in-python/
+
++ Jasmine [github]<br />
+http://pivotal.github.com/jasmine/
+

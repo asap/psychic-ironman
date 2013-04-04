@@ -19,6 +19,10 @@ class BarrelRoll(unittest.TestCase):
 
         wait = ui.WebDriverWait(driver, 10)
 
+        # This is going to fail, ti's really just to show browser automation.
+        # In reality, you would test for something specific, such as
+        # wait.until(lambda driver: driver.title.lower().startswith('Title'),
+        #            "Message lettting you know it failed"
         wait.until(lambda driver: driver.title.lower().startswith('foo'),
                    "I'm done")
 

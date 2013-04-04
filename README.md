@@ -12,6 +12,12 @@ Once installed:
     $ mkvirtualenv psychic-ironman
     $ pip install nose autonose selenium
 
+Run all tests:
+    $ nosetests
+
+Run a single test file
+    $ nosetests test_basic.py
+
 # Notes
 
 Run a specific test

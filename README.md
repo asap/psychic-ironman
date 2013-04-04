@@ -5,7 +5,7 @@ This a collection of resources for writing tests, mostly geared towards Python.
 Before you can install the project, make sure ``virtualenvwrapper`` is
 installed::
 
-    $ pip install -U virtualenvwrapper nose autonose
+    $ pip install -U virtualenvwrapper
 
 Once installed:
 

@@ -1,5 +1,27 @@
 This a collection of resources for writing tests, mostly geared towards Python.
 
+# Set Up
+
+Before you can install the project, make sure ``virtualenvwrapper`` is
+installed::
+
+    $ pip install -U virtualenvwrapper nose autonose
+
+Once installed:
+
+    $ mkvirtualenv psychic-ironman
+    $ pip install nose autonose selenium
+
+# Notes
+
+Run a specific test
+python tests/ MyTestClass.test_my_method
+
+# Docs
+
++ Selenium Python ReadTheDocs<br />
+http://selenium-python.readthedocs.org/en/latest/index.html
+
 # Tutorials
 
 + TDD Terminology Simplified [nettuts+]<br />

@@ -1,32 +1,18 @@
-This a collection of resources for writing tests, mostly geared towards Python.
+This a collection of resources for writing tests, split up based on languages
+that I enjoy working on.
 
-# Set Up
+# Who this is for
 
-Before you can install the project, make sure ``virtualenvwrapper`` is
-installed::
-
-    $ pip install -U virtualenvwrapper
-
-Once installed:
-
-    $ mkvirtualenv psychic-ironman
-    $ pip install nose autonose selenium
-
-Run all tests:
-    $ nosetests
-
-Run a single test file
-    $ nosetests test_basic.py
-
-# Notes
-
-Run a specific test
-python tests/ MyTestClass.test_my_method
+These resources are geared towards anyone with next to no experience with 
+testing or Test Driven Development (TDD) or Behavior Driven Development (BDD)
 
 # Docs
 
 + Selenium Python ReadTheDocs<br />
 http://selenium-python.readthedocs.org/en/latest/index.html
+
++ Jasmine [github]<br />
+http://pivotal.github.com/jasmine/
 
 # Tutorials
 
@@ -39,6 +25,8 @@ http://net.tutsplus.com/tutorials/javascript-ajax/headless-functional-testing-wi
 + Beginning Test-Driven Development in Python [nettuts+]<br />
 http://net.tutsplus.com/tutorials/python-tutorials/test-driven-development-in-python/
 
-+ Jasmine [github]<br />
-http://pivotal.github.com/jasmine/
++ Testing Your JavaScript with Jasmine [nettuts+]<br />
+http://net.tutsplus.com/tutorials/javascript-ajax/testing-your-javascript-with-jasmine/
 
++ How do I Jasmine: a tutorial [evanhahn.com]<br />
+http://evanhahn.com/how-do-i-jasmine/

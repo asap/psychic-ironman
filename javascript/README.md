@@ -35,7 +35,7 @@ Make your tests pass!
 # Docs
 
 + Jasmine [github]<br />
-http://pivotal.github.com/jasmine/
+http://jasmine.github.io/
 
 # Tutorials
 

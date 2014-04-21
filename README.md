@@ -12,7 +12,7 @@ testing or Test Driven Development (TDD) or Behavior Driven Development (BDD)
 http://selenium-python.readthedocs.org/en/latest/index.html
 
 + Jasmine [github]<br />
-http://pivotal.github.com/jasmine/
+http://jasmine.github.io/
 
 # Tutorials
 

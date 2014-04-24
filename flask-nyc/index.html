@@ -1,0 +1,203 @@
+<!doctype html>
+<!--
+
+                                                                                                                         
+     ***** **    ***                             *                ***** *     **          ***** *    **         * ***    
+  ******  **** *  ***                          **              ******  **    **** *    ******  *  *****       *  ****  * 
+ **   *  *  ***    **                          **             **   *  * **    ****    **   *  *     *****    *  *  ****  
+*    *  *    *     **                          **            *    *  *  **    * *    *    *  **     * **    *  **   **   
+    *  *           **                  ****    **                *  *    **   *          *  ***     *      *  ***        
+   ** **           **       ****      * **** * **  ***          ** **    **   *         **   **     *     **   **        
+   ** **           **      * ***  *  **  ****  ** * ***         ** **     **  *         **   **     *     **   **        
+   ** ******       **     *   ****  ****       ***   *          ** **     **  *         **   **     *     **   **        
+   ** *****        **    **    **     ***      **   *           ** **      ** *         **   **     *     **   **        
+   ** **           **    **    **       ***    **  *            ** **      ** *         **   **     *     **   **        
+   *  **           **    **    **         ***  ** **            *  **       ***          **  **     *      **  **        
+      *            **    **    **    ****  **  ******              *        ***           ** *      *       ** *      *  
+  *****            **    **    **   * **** *   **  ***         ****          **            ***      *        ***     *   
+ *  *****          *** *  ***** **     ****    **   *** *     *  *****                      *********         *******    
+*    ***            ***    ***   **             **   ***     *     **                         **** ***          ***      
+*                                                            *                                      ***                  
+ **                                                           **                        ********     ***                 
+                                                                                      *************  **                  
+                                                                                     *           ****                    
+                                                                                                                                                                                                                   
+                                                                                                                    
+http://github.com/asap
+
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Testing Flask with Selenium and Jasmine - @asapountzis</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress.css" rel="stylesheet" />
+
+    <link href="highlight/styles/default.css" rel="stylesheet">
+    <script type="text/javascript" src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div id="title" class="step">
+        <h2>Testing Flask</h2>
+        <h1>Using Selenium and Jasmine to test your Flask Apps</h1>        
+        <span class="footnote">Clone this -> <a href="https://github.com/asap/psychic-ironman">https://github.com/asap/psychic-ironman</a></span>
+    </div>
+
+    <div class="step slide" data-y="1000">
+        <q>Why should I test?</q>
+
+        <li>You might not be the only one working on the project</li>
+        <li>You might forget what you did a few weeks later</li>
+        <li>Some Junior Dev may break your sh*t!</li>
+
+    </div>
+
+    <div id="big" class="step" data-y="2000">
+
+        <q>What are we testing?</q>
+
+        <b>Not Flask!</b>
+
+    </div>
+
+    <div id="tiny" class="step" data-y="2000" data-z="2000" data-scale="1">
+
+        <b>&lt;Insert Link to Matt's Flask Testing Presentation&gt;</b>
+
+    </div>
+
+    <div class="step" data-y="3000">
+
+        <h2>What We're Really doing</h2>
+
+        <li>Automated Browser Testing</li>
+        <li>Javascript Unit Testing</li>
+
+    </div>
+
+    <div class="step" data-x="1000" data-y="0" data-z="2000" data-rotate-z="90">
+
+        <h2>Selenium</h2>
+
+        <li>Blackbox Testing</li>
+        <li>Simulates User Interaction</li>
+        <li>Actually Opens a Browser Window</li>
+
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="0" data-z="1000" data-rotate-z="90">
+
+        <h2>Selenium through Python</h2>
+        <pre><code>
+
+from selenium import webdriver
+
+def setUp(self):
+    self.driver = webdriver.Firefox()
+    self.url = site_url
+
+def test_case(self):
+    # Test goes here
+
+def tearDown(self):
+    self.driver.close()
+        </code></pre>
+    </div>
+    <div class="step slide" data-x="2000" data-y="0" data-z="1000" data-rotate-z="90">
+        <h2>Sample Assertions</h2>
+        <pre><code>
+
+def test_thing_exists(self):
+    driver = self.driver
+    driver.get(self.url)
+
+    self.assertTrue(
+        driver.find_elements_by_class_name('class_name'),
+        "Can't find a title on the page"
+    )
+        </code></pre>
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="0" data-z="2000" data-rotate-z="90">
+        <q>Show Me!</q>
+    </div>
+
+    <div class="step" data-x="1000" data-y="1000" data-z="2000" data-rotate-z="90">
+
+        <h2>Jasmine</h2>
+
+        <li>JavaScript Unit Testing</li>
+        <li>Runs in the Browser</li>
+        <li>Also runs via Command Line!</li>
+
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="1000" data-z="2000" data-rotate-z="90">
+
+        <h2>Sample Jasmine</h2>
+        <pre><code>
+describe("Your Code", function(){
+    it("should do something", function() {
+      expect(YourCode).toBeTruthy();
+    });
+});
+        </code></pre>
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="0" data-z="2000" data-rotate-z="90">
+        <q>Show Me!</q>
+    </div>
+    
+    <div class="step" data-y="-1000" data-rotate-x="90">
+        <p>fin</p>
+
+        <div class="footnote" style="margin: 10px 0">
+            <img src="img/github.png" width="64" height="64" />
+            <a href="http://github.com/asap/">http://github.com/asap/</a>
+        </div>
+
+        <div class="footnote" style="margin: 10px 0">
+            <img src="img/gittip.png" width="64" height="64" />
+            <a href="http://gittip.com/asap/">http://gittip.com/asap/</a>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

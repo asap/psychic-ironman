@@ -10,7 +10,7 @@ installed::
 Once installed:
 
     $ mkvirtualenv psychic-ironman
-    $ pip install nose autonose selenium
+    $ pip install nose selenium
 
 Run all tests:
     $ nosetests

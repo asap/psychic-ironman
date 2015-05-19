@@ -1,6 +1,10 @@
 'use strict';
 
 angular.module('dasApp')
+  .factory('visitor', function () {
+  // Tutorial assumes visitor is a thing, but we're faking this for now
+    return {};
+  })
   .factory('Person', function (visitor, $http) {
     return function Person (name) {
       this.name = name;

@@ -1,9 +1,3 @@
-angular.module('dasApp', [])
-  .factory('Person', function () {
-    return function Person (name) {
-      this.name = name;
-    };
-  })
-;
+'use strict';
 
-console.info("loaded app");
+angular.module('dasApp', []);
